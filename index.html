@@ -28,13 +28,25 @@
                 </div>
             </div>
 
-            <ul class="flex gap-9 items-center text-[#2c4266] font-bold">
+            <ul class="ul-header flex gap-9 items-center text-[#2c4266] font-bold">
                 <li><a class="hover:text-[#007dff] transition-all" href="#">Home</a></li>
                 <li><a class="hover:text-[#007dff] transition-all" href="#">Sobre</a></li>
                 <li><a class="hover:text-[#007dff] transition-all" href="#">Serviços</a></li>
                 <li><a class="hover:text-[#007dff] transition-all" href="#">Como Chegar</a></li>
                 <li><button class="bg-[#007dff] text-white !p-3 rounded-lg cursor-pointer transition-all hover:scale-[110%]" >Agende sua Tosa</button></li>
             </ul>
+
+             <ul id="mobile-ul-header" class="mobile-ul-header transition-all !p-3 flex flex-col items-center gap-9 text-[#ffff] font-bold bg-yellow-400 fixed z-10 w-full h-screen max-w-[300px]">
+                <div class="w-full flex justify-end">
+                    <button id="button-remove-mobile-ul" class="cursor-pointer"><i class="text-3xl fa-solid fa-xmark text-[#ffff]"></i></button>
+                </div>
+                <li><a class="" href="#inicio">Início</a></li>
+                <li><a class="" href="#sobre">Sobre nós</a></li>
+                <li><a class="" href="#servicos">Serviços</a></li>
+                <li><a class="" href="#contato">Contato</a></li>
+            </ul>
+
+            <button id="button-show-mobile-ul" class="cursor-pointer"><i class="fa-solid fa-bars text-3xl text-[#4089f8]"></i></button>
         </div>
     </header>
 
@@ -267,5 +279,8 @@
 
         </div>
     </footer>
+
+    <button id="backToTop" class="bg-yellow-400"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="script.js"></script>
 </body>
 </html>
