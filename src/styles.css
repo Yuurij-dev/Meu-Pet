@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: auto;
+
+    background-color: #f9f9f9;
+}
+
+.container{
+    padding: 0 2%;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container-main{
+    padding: 100px;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    background-image: url('../assets/bg-pet.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.review{
+    width: 90%;
+    /* max-width: 1400px; */
+    margin: 0 auto;
+}
+.margin-auto{
+    margin: 0 auto;
+}
+
+.cards-section{
+    margin-top: 150px;
+}
+.card{
+box-shadow: 0px 0px 10px 0px rgba(232,232,232,0.75);
+-webkit-box-shadow: 0px 0px 10px 0px rgba(232,232,232,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(232,232,232,0.75);
+}
+.card p {
+    line-height: 25px;
+}
+.card:hover{
+    transition: .3s ease all;
+    background-color: #007dff;
+    h3{
+        color: #fff;
+    }
+    p{
+        color: #fff;
+    }
+}
+
+.img-main-mobile{
+    display: none;
+}
+.mobile-cards-sobre{
+    display: none;
+}
+
+.review-mobile{
+    display: none;
+}
+
+.contato-section .container > :nth-child(1) {
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* Sobre Media Screen */
+@media screen and (max-width: 1400px) {
+    .cards-sobre{
+        display: none;
+    }
+    .mobile-cards-sobre{
+        display: flex;
+    }
+    .sobre > :nth-child(1){
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 710px) {
+    .mobile-cards-sobre{
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+@media screen and (max-width: 802px) {
+    .review{
+        display: none;
+    }
+    .review-mobile{
+        display: flex;
+    }
+    .cards-section{
+        margin-top: 30px;
+    }
+}
+
+
+
+
+/* Main medias screen */
+@media screen and (max-width: 1198px){
+    .container-main{
+        background-image: url('../assets/bg-pet-square.jpg');
+    }
+}
+@media screen and (max-width: 1024px ){
+    .img-main-mobile{
+        display: block;
+    }
+    .img-main-desktop{
+        display: none;
+    }
+    .container-main{
+        padding: 100px 30px;
+        flex-direction: column;
+        background-size: 100% 100%;
+    }
+    .container-main > :nth-child(1){
+        width: 100%;
+        text-align: center;  
+        display: flex; 
+        align-items: center;  
+        flex-direction: column;
+    }
+    .container-main > :nth-child(1) > :nth-child(1){
+        align-items: center; 
+    }
+     
+}
+@media screen and (max-width: 640px) {
+    .container-main{
+        background-image: url('../assets/bg-pet-mobile.jpg');
+    }
+}
+@media screen and (max-width: 510px) {
+    .container-main > :nth-child(2) h1{
+        font-size: 40px;
+    }
+
+    .container-main > :nth-child(2) p{
+        font-size: 14px;
+    }
+
+    .container-main h1{
+        font-size: 40px;
+    }
+
+    .container-main button{
+        max-width: 250px;
+    }
+}
+
+/* Cards */
+
+@media screen and (max-width: 900px){
+    .grid-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px){
+    .grid-cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contato */
+@media screen and (max-width: 1170px) {
+    .contato-section .container > :nth-child(2){
+        display: none;
+    }
+
+    .contato-section .container {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .contato-section .container > :nth-child(1) > :nth-child(3){
+        justify-content: center;
+        
+    }
+    .contato-section .container > :nth-child(1) {
+        padding: 50px;
+        width: 100%;
+    }
+
+}
+
+
+/*  */
+
+@media screen and (max-width: 1030px){
+    .map-container{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .map-container > :nth-child(1){
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .map-container iframe{
+        width: 400px;
+    }
+}

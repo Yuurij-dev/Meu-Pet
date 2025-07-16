@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="src/styles.css">
+    <!-- Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Meu Pet</title>
+</head>
+<body>
+    <header class="w-full relative z-10">
+        <div class="container flex justify-between items-center">
+            <div class="logo flex items-center">
+                <img class="w-[80px] h-[120px]" src="assets/logo.png" alt="">
+                <div>
+                    <h1 class="text-3xl font-bold text-[#192e37]"><span class="text-yellow-400">meu</span>PetShop</h1>
+                    <p class="text-[12px]"><i class="fa-solid fa-heart text-red-500"></i> Cuidando com amor do seu pet.</p>
+                </div>
+            </div>
+
+            <ul class="flex gap-9 items-center text-[#2c4266] font-bold">
+                <li><a class="hover:text-[#007dff] transition-all" href="#">Home</a></li>
+                <li><a class="hover:text-[#007dff] transition-all" href="#">Sobre</a></li>
+                <li><a class="hover:text-[#007dff] transition-all" href="#">Serviços</a></li>
+                <li><a class="hover:text-[#007dff] transition-all" href="#">Como Chegar</a></li>
+                <li><button class="bg-[#007dff] text-white !p-3 rounded-lg cursor-pointer transition-all hover:scale-[110%]" >Agende sua Tosa</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="!px-[2%]">
+        <div class="container-main relative h-full !mt-[30px] !mb-[60px] rounded-[50px] flex items-center">
+            <div class="w-[60%]">
+                <!-- <div class="img-main-mobile select-none">
+                    <img class="w-full max-w-[300px]" src="assets/dog-main.png" alt="dog">
+                </div> -->
+                <div class="flex flex-col gap-7">
+                    <h1 class="text-[#192e37] text-6xl font-bold">Seu <span class="text-[#007dff]">peludo</span> aos cuidados de <span class="text-[#007dff]">quem entende.</span></h1>
+                    <p class="block w-full max-w-[600px] text-[#192e37] font-semibold text-[15px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugiat at maxime aliquam officia, porro sunt debitis unde! Sit facilis unde.</p>
+                    <button class="bg-[#007dff] text-white !p-4 w-full max-w-[350px] rounded-[30px] font-semibold text-[20px] cursor-pointer transition-all hover:scale-[110%]">Agendar Banho</button>
+                </div>
+
+                <ul class="flex gap-5 !mt-20">
+                    <li class="bg-[#007dff] w-[45px] h-[45px] flex items-center justify-center rounded-[50%] text-white cursor-pointer transition-all hover:scale-[110%]">
+                        <a href="#"><i class="fa-brands fa-whatsapp text-[20px]"></i></a>
+                    </li>
+
+                    <li class="bg-[#007dff] w-[45px] h-[45px] flex items-center justify-center rounded-[50%] text-white cursor-pointer transition-all hover:scale-[110%]">
+                        <a href="#"><i class="fa-brands fa-instagram text-[20px]"></i></a>
+                    </li>
+
+                    <li class="bg-[#007dff] w-[45px] h-[45px] flex items-center justify-center rounded-[50%] text-white cursor-pointer transition-all hover:scale-[110%]">
+                        <a href="#"><i class="fa-brands fa-facebook-f text-[20px]"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="img-main-desktop w-[40%] absolute bottom-[-160px] right-10 select-none">
+                <img class="h-[1000px]" src="assets/dog-main.png" alt="dog">
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-[#007dff] !p-10 relative !px-[2%]">
+        <div class="container sobre !py-[70px] flex justify-between">
+            <div class="w-[40%] text-white flex flex-col gap-7">
+                <h3 class="font-bold">Sobre nós</h3>
+                <h2 class="text-3xl font-bold">Seu peludo <span class="text-yellow-400">precisa de carinho</span> e conforto, pois ele vive o dia, a hora e a <span class="text-yellow-400">todo momento!</span></h2>
+                <p class="text-[15px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ratione provident vitae quaerat adipisci, obcaecati ut quasi quo ipsam libero quia perspiciatis nemo! Eum, omnis? Corrupti sed veritatis blanditiis repudiandae.</p>
+
+                <div class="mobile-cards-sobre w-full flex gap-10 justify-center">
+                    <div class="transition-all hover:rotate-5">
+                        <img class="h-[500px] rounded-lg" src="assets/card-imgs/cat.jpg" alt="">
+                    </div>
+                    <div class="transition-all hover:rotate-5">
+                        <img class="h-[500px] rounded-lg" src="assets/card-imgs/dog.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="flex gap-10 items-center">
+                    <button class="bg-[#192e37] !p-4 w-full max-w-[150px] rounded-lg font-semibold text-[18px] transition-all hover:scale-[110%] cursor-pointer">Agendar</button>
+                    <span class="font-normal text-[18px] cursor-pointer transition-all hover:scale-[110%]">Feed Instagram <i class="fa-solid fa-chevron-right font-bold text-[18px]"></i></span>
+                </div>
+            </div>
+
+            <div class="cards-sobre w-[60%] flex gap-10 justify-end">
+                <div class="transition-all hover:rotate-5">
+                    <img class="h-[500px] rounded-lg" src="assets/card-imgs/cat.jpg" alt="">
+                </div>
+                <div class="transition-all hover:rotate-5">
+                    <img class="h-[500px] rounded-lg" src="assets/card-imgs/dog.jpg" alt="">
+                </div>
+            </div>
+            
+            <div class="review !p-7 w-full max-w-[1100px] bg-white rounded-xl absolute flex gap-4 bottom-[-80px] left-[50%] translate-x-[-50%]">
+                <div class=" w-[70%]">
+                    <span class="font-semibold text-[#192e37]">"O Profissionalismo dessa clínica é surreal, as entregas de remédios e utilidades pros meus pets sempre foram muito rápidas, os veterinários são super atenciosos e cuidaram muito bem…"</span>
+                </div>
+                <div class="flex gap-3">
+                    <h2 class="text-5xl font-semibold text-yellow-400">4.9</h2>
+                    <div>
+                        <span class="font-semibold text-[#192e37]">112 Reviews no Google</span>
+                        <div class="flex gap-3">
+                            <i class="fa-solid fa-star text-yellow-400 text-[17px]"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-[17px]"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-[17px]"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-[17px]"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-[17px]"></i>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards-section relative  !mb-[80px] !px-[2%]">
+        <div class="container">
+            <div class="review-mobile w-full margin-auto !mb-[30px] !p-7 max-w-[1100px] bg-white rounded-xl flex flex-col items-center text-center gap-4 ">
+                <div class=" w-[70%]">
+                    <span class="font-semibold text-[#192e37]">"O Profissionalismo dessa clínica é surreal, as entregas de remédios e utilidades pros meus pets sempre foram muito rápidas, os veterinários são super atenciosos e cuidaram muito bem…"</span>
+                </div>
+                <div class="flex flex-col  gap-3">
+                    <h2 class="text-5xl font-semibold text-yellow-400">4.9</h2>
+                    <div class="flex flex-col items-center">
+                        <span class="font-semibold text-[#192e37]">112 Reviews no Google</span>
+                        <div class="flex gap-3 items-center">
+                            <i class="fa-solid fa-star text-yellow-400 text-[17px]"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-[17px]"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-[17px]"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-[17px]"></i>
+                            <i class="fa-solid fa-star text-yellow-400 text-[17px]"></i>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center !mb-[100px]">
+                <h1 class="text-2xl font-bold text-[#192e37]">Temos <span class="text-[#007dff]">excelência e amor</span> pelo que fazemos<br> para o seu bichinho.</h1>
+            </div>
+
+            <div class="grid-cards w-full max-w-[1100px] margin-auto grid grid-cols-3 gap-11">
+                <div class="card bg-white rounded-xl !p-5 flex flex-col items-center gap-5 text-center">
+                    <div class="w-[100px] h-[100px] rounded-full bg-zinc-400 overflow-hidden">
+                        <img class="w-full h-full" src="assets/card-imgs/banho.jpg" alt="">
+                    </div>
+                    <h3 class="text-[18px] font-semibold text-[#192e37]">Banho & Tosa</h3>
+                    <p class="text-[14px] text-zinc-400">Lorem, ipsum dolor sit amet tem porro! Distinctio, blanditiis numquam enim temporibus necessitatibus impedit. Rem voluptas ipsum non!</p>
+                </div>
+
+                <div class="card bg-white rounded-xl !p-5 flex flex-col items-center gap-5 text-center">
+                    <div class="w-[100px] h-[100px] rounded-full bg-zinc-400 overflow-hidden">
+                        <img class="w-full h-full" src="assets/card-imgs/veterinario.jpg" alt="">
+                    </div>
+                    <h3 class="text-[18px] font-semibold text-[#192e37]">Veterinário</h3>
+                    <p class="text-[14px] text-zinc-400">Lorem, ipsum dolor sit amet tem porro! Distinctio, blanditiis numquam enim temporibus necessitatibus impedit. Rem voluptas ipsum non!</p>
+                </div>
+
+                <div class="card bg-white rounded-xl !p-5 flex flex-col items-center gap-5 text-center">
+                    <div class="w-[100px] h-[100px] rounded-full bg-zinc-400 overflow-hidden">
+                        <img class="w-full h-full" src="assets/card-imgs/vacinacao.jpg" alt="">
+                    </div>
+                    <h3 class="text-[18px] font-semibold text-[#192e37]">Vacinação</h3>
+                    <p class="text-[14px] text-zinc-400">Lorem, ipsum dolor sit amet tem porro! Distinctio, blanditiis numquam enim temporibus necessitatibus impedit. Rem voluptas ipsum non!</p>
+                </div>
+
+                <div class="card bg-white rounded-xl !p-5 flex flex-col items-center gap-5 text-center">
+                    <div class="w-[100px] h-[100px] rounded-full bg-zinc-400 overflow-hidden">
+                        <img class="w-full h-full" src="assets/card-imgs/brinquedo.jpg" alt="">
+                    </div>
+                    <h3 class="text-[18px] font-semibold text-[#192e37]">Variedade de Brinquedos</h3>
+                    <p class="text-[14px] text-zinc-400">Lorem, ipsum dolor sit amet tem porro! Distinctio, blanditiis numquam enim temporibus necessitatibus impedit. Rem voluptas ipsum non!</p>
+                </div>
+
+                <div class="card bg-white rounded-xl !p-5 flex flex-col items-center gap-5 text-center">
+                    <div class="w-[100px] h-[100px] rounded-full bg-zinc-400 overflow-hidden">
+                        <img class="w-full h-full" src="assets/card-imgs/cuidados.jpg" alt="">
+                    </div>
+                    <h3 class="text-[18px] font-semibold text-[#192e37]">Cuidados</h3>
+                    <p class="text-[14px] text-zinc-400">Lorem, ipsum dolor sit amet tem porro! Distinctio, blanditiis numquam enim temporibus necessitatibus impedit. Rem voluptas ipsum non!</p>
+                </div>
+
+                <div class="card bg-white rounded-xl !p-5 flex flex-col items-center gap-5 text-center">
+                    <div class="w-[100px] h-[100px] rounded-full bg-zinc-400 overflow-hidden">
+                        <img class="w-full h-full" src="assets/card-imgs/racao.jpg" alt="">
+                    </div>
+                    <h3 class="text-[18px] font-semibold text-[#192e37]">Ração</h3>
+                    <p class="text-[14px] text-zinc-400">Lorem, ipsum dolor sit amet tem porro! Distinctio, blanditiis numquam enim temporibus necessitatibus impedit. Rem voluptas ipsum non!</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="contato-section w-full !mb-[80px] !px-[2%]">
+        <div class="container flex gap-10 rounded-[30px] bg-white overflow-hidden">
+            <div class="w-[70%] flex flex-col gap-7">
+                <h2 class="text-3xl font-bold text-[#192e37]">Venha conhecer <span class="text-[#007dff]">o meuPetShop.</span></h2>
+                <span class="text-[#192e37]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eaque fugit voluptatem sapiente repellendus ipsa, et corporis id ratione nihil nesciunt culpa harum unde accusantium dolorem, ipsam obcaecati, voluptatibus quo!</span>
+                <div class="flex gap-10 items-center">
+                    <button class="bg-[#007dff] text-white !p-4 w-full max-w-[200px] rounded-lg font-semibold text-[18px] transition-all hover:scale-[110%] cursor-pointer">Fale Conosco</button>
+                    <span class="text-[#007dff] font-normal text-[18px] cursor-pointer transition-all hover:scale-[110%]">Feed Instagram <i class="fa-solid fa-chevron-right font-bold text-[18px]"></i></span>
+                </div>
+            </div>
+
+            <div class="w-[30%]">
+                <img class="w-full h-full" src="assets/cat-img.jpg" alt="cat">
+            </div>
+        </div>
+    </section>
+
+    <section class="!mb-[80px] !px-[2%]">
+        <div class="map-container w-full max-w-[1200px] flex justify-between gap-10 margin-auto">
+            <div class="w-1/2 flex flex-col gap-7">
+                <h3 class="font-semibold text-[#192e37]">Onde nos encontrar?</h3>
+                <h2 class="text-3xl font-bold text-[#192e37]">Nossa clínica está localizada no centro da cidade de São Paulo, mas nosso atendimento se estende por toda região.</h2>
+                <p class="text-[#192e37] text-[15px]">Durante o agendamento, você também pode solicitar que nossa empresa cuide do transporte de seu bichinho, podemos buscá-lo e temos todo o cuidado para que nosso serviço também seja o melhor para você!</p>
+                <button class="bg-[#192e37] !p-4 w-full max-w-[150px] rounded-lg font-semibold text-[18px] transition-all hover:scale-[110%] cursor-pointer text-white">Agendar</button>
+            </div>
+
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9043.890126365275!2d-47.894561044231445!3d-15.7896593498688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1752631413259!5m2!1spt-BR!2sbr" width="500" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#007dff] ">
+        <div class="container flex justify-between items-center !py-3">
+            <div class="flex gap-10 text-[#fff]">
+                <div class="flex flex-col gap-5 ">
+                    <h3 class="font-semibold text-[13px]">LIGUE E AGENDE SEU HORÁRIO</h3>
+                    <span class="font-bold text-yellow-400  text-[19px]">+55 (011) 91234-5678</span>
+                    <span class="font-semibold text-[15px]">Rua Homem Vitruviano, 21 Centro,<br>São Paulo, SP (54321-001)</span>
+                </div>
+
+                <div class="flex flex-col gap-5 ">
+                    <h3 class="font-semibold text-[13px]">ESCRITÓRIO & FINANCEIRO</h3>
+                    <span class="font-bold text-yellow-400  text-[19px]">+55 (011) 98765-4321</span>
+                    <span class="font-semibold text-[15px]">Rua Leonardo daVinci, 42 Centro,<br>São Paulo, SP (12345-000)</span>
+                </div>
+            </div>
+
+            <ul class="flex items-center gap-5">
+                <li class="cursor-pointer bg-[#192e37] w-[45px] h-[45px] flex items-center justify-center rounded-[50%] text-white">
+                    <a href="#"><i class="fa-brands fa-whatsapp text-[20px]"></i></a>
+                </li>
+
+                <li class="cursor-pointer bg-[#192e37] w-[45px] h-[45px] flex items-center justify-center rounded-[50%] text-white">
+                    <a href="#"><i class="fa-brands fa-instagram text-[20px]"></i></a>
+                </li>
+
+                <li class="cursor-pointer bg-[#192e37] w-[45px] h-[45px] flex items-center justify-center rounded-[50%] text-white">
+                    <a href="#"><i class="fa-brands fa-facebook-f text-[20px]"></i></a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+</body>
+</html>
